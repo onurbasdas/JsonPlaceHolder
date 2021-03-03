@@ -8,38 +8,57 @@
 import UIKit
 
 class AlbumsTableViewController: UITableViewController {
+    
+    var albumData = [Album]()
+    var page = 0
+    var loadingData = false
+    var allDataLoaded = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        getAlbums(page)
+        
     }
+    
+   func getAlbums(_ page: Int){
+           Api.shared.getAlbumList(page: page){
+               albums in
+               if albums?.count == 0 {
+                   return
+               }
+               self.page += 1
+               for album in albums! {
+                   self.albumData.append(album)
+                   self.tableView.reloadData()
+               }
+           }
+       }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return albumData.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AlbumTableViewCell", for: indexPath) as! AlbumsTableViewCell
 
-        // Configure the cell...
-
-        return cell
+               if let title =  self.albumData[indexPath.row].title {
+                   cell.labelTitle.text = title
+               }
+                   
+               return cell
     }
-    */
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
+
 
     /*
     // Override to support conditional editing of the table view.

@@ -1,0 +1,6 @@
+framework module Pods_ThreePounds {
+  umbrella header "Pods-ThreePounds-umbrella.h"
+
+  export *
+  module * { export * }
+}

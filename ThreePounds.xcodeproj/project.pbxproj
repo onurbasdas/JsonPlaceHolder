@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FC6F5D9B18A4256E2F733E2 /* Pods_ThreePounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06658161C5F6EDC208E15F26 /* Pods_ThreePounds.framework */; };
+		B99AC16725F0303C0051579F /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC16625F0303C0051579F /* Album.swift */; };
+		B99AC16B25F031A30051579F /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC16A25F031A30051579F /* AlbumsTableViewController.swift */; };
+		B99AC16E25F033170051579F /* AlbumsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC16D25F033170051579F /* AlbumsTableViewCell.swift */; };
+		B99AC17225F03B5E0051579F /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC17125F03B5E0051579F /* Api.swift */; };
+		B99AC17625F03C2E0051579F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC17525F03C2E0051579F /* Constant.swift */; };
+		B99AC18025F0432A0051579F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC17F25F0432A0051579F /* Photo.swift */; };
 		B9F00EA925F0266200D467EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F00EA825F0266200D467EC /* AppDelegate.swift */; };
 		B9F00EAB25F0266200D467EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F00EAA25F0266200D467EC /* SceneDelegate.swift */; };
 		B9F00EAD25F0266200D467EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F00EAC25F0266200D467EC /* ViewController.swift */; };
@@ -16,6 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06658161C5F6EDC208E15F26 /* Pods_ThreePounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreePounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		895DC0CE90E6BAA9C825020B /* Pods-ThreePounds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreePounds.release.xcconfig"; path = "Target Support Files/Pods-ThreePounds/Pods-ThreePounds.release.xcconfig"; sourceTree = "<group>"; };
+		9DE487D0C18F92DACCCEB8D6 /* Pods-ThreePounds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreePounds.debug.xcconfig"; path = "Target Support Files/Pods-ThreePounds/Pods-ThreePounds.debug.xcconfig"; sourceTree = "<group>"; };
+		B99AC16625F0303C0051579F /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		B99AC16A25F031A30051579F /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
+		B99AC16D25F033170051579F /* AlbumsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewCell.swift; sourceTree = "<group>"; };
+		B99AC17125F03B5E0051579F /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		B99AC17525F03C2E0051579F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		B99AC17F25F0432A0051579F /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		B9F00EA525F0266200D467EC /* ThreePounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreePounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F00EA825F0266200D467EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9F00EAA25F0266200D467EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +47,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FC6F5D9B18A4256E2F733E2 /* Pods_ThreePounds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3408D44D987756F8A80A015C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DE487D0C18F92DACCCEB8D6 /* Pods-ThreePounds.debug.xcconfig */,
+				895DC0CE90E6BAA9C825020B /* Pods-ThreePounds.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		77392FC9CAED2078D00438EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06658161C5F6EDC208E15F26 /* Pods_ThreePounds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B99AC16325F02FEA0051579F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B99AC16625F0303C0051579F /* Album.swift */,
+				B99AC17F25F0432A0051579F /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B99AC16525F030170051579F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9F00EAC25F0266200D467EC /* ViewController.swift */,
+				B99AC16A25F031A30051579F /* AlbumsTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B99AC17025F03B470051579F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B99AC17125F03B5E0051579F /* Api.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B99AC17425F03C130051579F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B99AC17525F03C2E0051579F /* Constant.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		B9F00E9C25F0266200D467EC = {
 			isa = PBXGroup;
 			children = (
 				B9F00EA725F0266200D467EC /* ThreePounds */,
 				B9F00EA625F0266200D467EC /* Products */,
+				3408D44D987756F8A80A015C /* Pods */,
+				77392FC9CAED2078D00438EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +126,27 @@
 		B9F00EA725F0266200D467EC /* ThreePounds */ = {
 			isa = PBXGroup;
 			children = (
+				B9F00EBD25F029D700D467EC /* Views */,
+				B99AC17425F03C130051579F /* Utils */,
+				B99AC17025F03B470051579F /* Service */,
+				B99AC16525F030170051579F /* ViewControllers */,
+				B99AC16325F02FEA0051579F /* Model */,
 				B9F00EA825F0266200D467EC /* AppDelegate.swift */,
 				B9F00EAA25F0266200D467EC /* SceneDelegate.swift */,
-				B9F00EAC25F0266200D467EC /* ViewController.swift */,
 				B9F00EAE25F0266200D467EC /* Main.storyboard */,
 				B9F00EB125F0266400D467EC /* Assets.xcassets */,
 				B9F00EB325F0266400D467EC /* LaunchScreen.storyboard */,
 				B9F00EB625F0266400D467EC /* Info.plist */,
 			);
 			path = ThreePounds;
+			sourceTree = "<group>";
+		};
+		B9F00EBD25F029D700D467EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B99AC16D25F033170051579F /* AlbumsTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9F00EB925F0266400D467EC /* Build configuration list for PBXNativeTarget "ThreePounds" */;
 			buildPhases = (
+				2C9548664E7A504768DC2209 /* [CP] Check Pods Manifest.lock */,
 				B9F00EA125F0266200D467EC /* Sources */,
 				B9F00EA225F0266200D467EC /* Frameworks */,
 				B9F00EA325F0266200D467EC /* Resources */,
+				3BCCE8445A6B33135ABF17D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +216,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C9548664E7A504768DC2209 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThreePounds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BCCE8445A6B33135ABF17D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThreePounds/Pods-ThreePounds-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThreePounds/Pods-ThreePounds-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThreePounds/Pods-ThreePounds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B9F00EA125F0266200D467EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +266,12 @@
 				B9F00EAD25F0266200D467EC /* ViewController.swift in Sources */,
 				B9F00EA925F0266200D467EC /* AppDelegate.swift in Sources */,
 				B9F00EAB25F0266200D467EC /* SceneDelegate.swift in Sources */,
+				B99AC18025F0432A0051579F /* Photo.swift in Sources */,
+				B99AC17625F03C2E0051579F /* Constant.swift in Sources */,
+				B99AC16725F0303C0051579F /* Album.swift in Sources */,
+				B99AC16B25F031A30051579F /* AlbumsTableViewController.swift in Sources */,
+				B99AC17225F03B5E0051579F /* Api.swift in Sources */,
+				B99AC16E25F033170051579F /* AlbumsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +415,7 @@
 		};
 		B9F00EBA25F0266400D467EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DE487D0C18F92DACCCEB8D6 /* Pods-ThreePounds.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +435,7 @@
 		};
 		B9F00EBB25F0266400D467EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 895DC0CE90E6BAA9C825020B /* Pods-ThreePounds.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
