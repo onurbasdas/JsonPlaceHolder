@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1FC6F5D9B18A4256E2F733E2 /* Pods_ThreePounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06658161C5F6EDC208E15F26 /* Pods_ThreePounds.framework */; };
+		B93490B925F17814007D74A9 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93490B825F17814007D74A9 /* Media.xcassets */; };
 		B99AC16725F0303C0051579F /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC16625F0303C0051579F /* Album.swift */; };
 		B99AC16B25F031A30051579F /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC16A25F031A30051579F /* AlbumsTableViewController.swift */; };
 		B99AC16E25F033170051579F /* AlbumsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC16D25F033170051579F /* AlbumsTableViewCell.swift */; };
@@ -20,7 +21,6 @@
 		B9AA9F3125F15C70009E7ABF /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA9F3025F15C70009E7ABF /* PhotoViewController.swift */; };
 		B9AA9F3425F15E2C009E7ABF /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA9F3325F15E2C009E7ABF /* CustomCollectionViewCell.swift */; };
 		B9AA9F3F25F16B68009E7ABF /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA9F3E25F16B68009E7ABF /* ProfilViewController.swift */; };
-		B9AA9F4C25F1731A009E7ABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9AA9F4B25F1731A009E7ABF /* Assets.xcassets */; };
 		B9F00EA925F0266200D467EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F00EA825F0266200D467EC /* AppDelegate.swift */; };
 		B9F00EAB25F0266200D467EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F00EAA25F0266200D467EC /* SceneDelegate.swift */; };
 		B9F00EAD25F0266200D467EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F00EAC25F0266200D467EC /* ViewController.swift */; };
@@ -32,6 +32,7 @@
 		06658161C5F6EDC208E15F26 /* Pods_ThreePounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreePounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		895DC0CE90E6BAA9C825020B /* Pods-ThreePounds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreePounds.release.xcconfig"; path = "Target Support Files/Pods-ThreePounds/Pods-ThreePounds.release.xcconfig"; sourceTree = "<group>"; };
 		9DE487D0C18F92DACCCEB8D6 /* Pods-ThreePounds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreePounds.debug.xcconfig"; path = "Target Support Files/Pods-ThreePounds/Pods-ThreePounds.debug.xcconfig"; sourceTree = "<group>"; };
+		B93490B825F17814007D74A9 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		B99AC16625F0303C0051579F /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		B99AC16A25F031A30051579F /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
 		B99AC16D25F033170051579F /* AlbumsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewCell.swift; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		B9AA9F3025F15C70009E7ABF /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		B9AA9F3325F15E2C009E7ABF /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		B9AA9F3E25F16B68009E7ABF /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
-		B9AA9F4B25F1731A009E7ABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../Downloads/JsonPlaceHolder-master/MediaMonksExercise/Assets.xcassets"; sourceTree = "<group>"; };
 		B9F00EA525F0266200D467EC /* ThreePounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreePounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F00EA825F0266200D467EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9F00EAA25F0266200D467EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,7 +143,6 @@
 		B9F00EA725F0266200D467EC /* ThreePounds */ = {
 			isa = PBXGroup;
 			children = (
-				B9AA9F4B25F1731A009E7ABF /* Assets.xcassets */,
 				B9F00EBD25F029D700D467EC /* Views */,
 				B99AC17425F03C130051579F /* Utils */,
 				B99AC17025F03B470051579F /* Service */,
@@ -152,6 +151,7 @@
 				B9F00EA825F0266200D467EC /* AppDelegate.swift */,
 				B9F00EAA25F0266200D467EC /* SceneDelegate.swift */,
 				B9F00EAE25F0266200D467EC /* Main.storyboard */,
+				B93490B825F17814007D74A9 /* Media.xcassets */,
 				B9F00EB325F0266400D467EC /* LaunchScreen.storyboard */,
 				B9F00EB625F0266400D467EC /* Info.plist */,
 			);
@@ -227,7 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9F00EB525F0266400D467EC /* LaunchScreen.storyboard in Resources */,
-				B9AA9F4C25F1731A009E7ABF /* Assets.xcassets in Resources */,
+				B93490B925F17814007D74A9 /* Media.xcassets in Resources */,
 				B9F00EB025F0266200D467EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
