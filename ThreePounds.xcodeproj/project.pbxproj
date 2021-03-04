@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		1FC6F5D9B18A4256E2F733E2 /* Pods_ThreePounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06658161C5F6EDC208E15F26 /* Pods_ThreePounds.framework */; };
+		B97F0F0825F101EF001B7712 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97F0F0625F101EF001B7712 /* PhotoTableViewCell.swift */; };
+		B97F0F0925F101EF001B7712 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97F0F0725F101EF001B7712 /* PhotoTableViewCell.xib */; };
 		B99AC16725F0303C0051579F /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC16625F0303C0051579F /* Album.swift */; };
 		B99AC16B25F031A30051579F /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC16A25F031A30051579F /* AlbumsTableViewController.swift */; };
 		B99AC16E25F033170051579F /* AlbumsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC16D25F033170051579F /* AlbumsTableViewCell.swift */; };
 		B99AC17225F03B5E0051579F /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC17125F03B5E0051579F /* Api.swift */; };
 		B99AC17625F03C2E0051579F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC17525F03C2E0051579F /* Constant.swift */; };
 		B99AC18025F0432A0051579F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC17F25F0432A0051579F /* Photo.swift */; };
+		B99AC19525F04D950051579F /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC19425F04D950051579F /* SegmentedViewController.swift */; };
+		B99AC1A425F05B440051579F /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC1A325F05B440051579F /* Comment.swift */; };
+		B9AA9F0E25F12074009E7ABF /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA9F0D25F12074009E7ABF /* PhotoTableViewController.swift */; };
+		B9AA9F1125F120C0009E7ABF /* CommentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA9F1025F120C0009E7ABF /* CommentTableViewController.swift */; };
 		B9F00EA925F0266200D467EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F00EA825F0266200D467EC /* AppDelegate.swift */; };
 		B9F00EAB25F0266200D467EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F00EAA25F0266200D467EC /* SceneDelegate.swift */; };
 		B9F00EAD25F0266200D467EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F00EAC25F0266200D467EC /* ViewController.swift */; };
@@ -26,12 +32,18 @@
 		06658161C5F6EDC208E15F26 /* Pods_ThreePounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreePounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		895DC0CE90E6BAA9C825020B /* Pods-ThreePounds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreePounds.release.xcconfig"; path = "Target Support Files/Pods-ThreePounds/Pods-ThreePounds.release.xcconfig"; sourceTree = "<group>"; };
 		9DE487D0C18F92DACCCEB8D6 /* Pods-ThreePounds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreePounds.debug.xcconfig"; path = "Target Support Files/Pods-ThreePounds/Pods-ThreePounds.debug.xcconfig"; sourceTree = "<group>"; };
+		B97F0F0625F101EF001B7712 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		B97F0F0725F101EF001B7712 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
 		B99AC16625F0303C0051579F /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		B99AC16A25F031A30051579F /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
 		B99AC16D25F033170051579F /* AlbumsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewCell.swift; sourceTree = "<group>"; };
 		B99AC17125F03B5E0051579F /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		B99AC17525F03C2E0051579F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		B99AC17F25F0432A0051579F /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		B99AC19425F04D950051579F /* SegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
+		B99AC1A325F05B440051579F /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		B9AA9F0D25F12074009E7ABF /* PhotoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
+		B9AA9F1025F120C0009E7ABF /* CommentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewController.swift; sourceTree = "<group>"; };
 		B9F00EA525F0266200D467EC /* ThreePounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreePounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F00EA825F0266200D467EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9F00EAA25F0266200D467EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,11 +83,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B97F0F0525F101DA001B7712 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				B97F0F0625F101EF001B7712 /* PhotoTableViewCell.swift */,
+				B97F0F0725F101EF001B7712 /* PhotoTableViewCell.xib */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
 		B99AC16325F02FEA0051579F /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				B99AC16625F0303C0051579F /* Album.swift */,
 				B99AC17F25F0432A0051579F /* Photo.swift */,
+				B99AC1A325F05B440051579F /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,6 +107,9 @@
 			children = (
 				B9F00EAC25F0266200D467EC /* ViewController.swift */,
 				B99AC16A25F031A30051579F /* AlbumsTableViewController.swift */,
+				B99AC19425F04D950051579F /* SegmentedViewController.swift */,
+				B9AA9F0D25F12074009E7ABF /* PhotoTableViewController.swift */,
+				B9AA9F1025F120C0009E7ABF /* CommentTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -126,6 +151,7 @@
 		B9F00EA725F0266200D467EC /* ThreePounds */ = {
 			isa = PBXGroup;
 			children = (
+				B97F0F0525F101DA001B7712 /* Photo */,
 				B9F00EBD25F029D700D467EC /* Views */,
 				B99AC17425F03C130051579F /* Utils */,
 				B99AC17025F03B470051579F /* Service */,
@@ -208,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B97F0F0925F101EF001B7712 /* PhotoTableViewCell.xib in Resources */,
 				B9F00EB525F0266400D467EC /* LaunchScreen.storyboard in Resources */,
 				B9F00EB225F0266400D467EC /* Assets.xcassets in Resources */,
 				B9F00EB025F0266200D467EC /* Main.storyboard in Resources */,
@@ -270,7 +297,12 @@
 				B99AC17625F03C2E0051579F /* Constant.swift in Sources */,
 				B99AC16725F0303C0051579F /* Album.swift in Sources */,
 				B99AC16B25F031A30051579F /* AlbumsTableViewController.swift in Sources */,
+				B99AC1A425F05B440051579F /* Comment.swift in Sources */,
+				B9AA9F1125F120C0009E7ABF /* CommentTableViewController.swift in Sources */,
+				B97F0F0825F101EF001B7712 /* PhotoTableViewCell.swift in Sources */,
+				B99AC19525F04D950051579F /* SegmentedViewController.swift in Sources */,
 				B99AC17225F03B5E0051579F /* Api.swift in Sources */,
+				B9AA9F0E25F12074009E7ABF /* PhotoTableViewController.swift in Sources */,
 				B99AC16E25F033170051579F /* AlbumsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
