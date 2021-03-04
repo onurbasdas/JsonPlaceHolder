@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import SwiftIcons
 
 class ViewController: UIViewController {
 
+    @IBOutlet var loginClicked: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        loginClicked.setIcon(icon: .emoji(.balloon), title: "Welcome", color: .black, forState: .normal)
     }
 
 

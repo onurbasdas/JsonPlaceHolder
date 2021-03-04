@@ -97,11 +97,11 @@
 			isa = PBXGroup;
 			children = (
 				B9F00EAC25F0266200D467EC /* ViewController.swift */,
+				B9AA9F3E25F16B68009E7ABF /* ProfilViewController.swift */,
 				B99AC16A25F031A30051579F /* AlbumsTableViewController.swift */,
 				B9AA9F1325F121B3009E7ABF /* SegeViewController.swift */,
 				B9AA9F1025F120C0009E7ABF /* CommentTableViewController.swift */,
 				B9AA9F3025F15C70009E7ABF /* PhotoViewController.swift */,
-				B9AA9F3E25F16B68009E7ABF /* ProfilViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

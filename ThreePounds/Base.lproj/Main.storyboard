@@ -18,11 +18,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7o-Gf-YmL">
+                                <rect key="frame" x="105" y="82" width="204" height="89"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="FvS-WE-ESR">
+                                <rect key="frame" x="87" y="224" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiH-AQ-Uup">
-                                <rect key="frame" x="138" y="525" width="138" height="49"/>
+                                <rect key="frame" x="87" y="588" width="240" height="195"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="WiY-Kw-ahy"/>
+                                    <constraint firstAttribute="height" constant="195" id="WiY-Kw-ahy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <state key="normal" title="Giriş">
@@ -32,30 +43,22 @@
                                     <segue destination="iHD-aP-Yfj" kind="presentation" modalPresentationStyle="fullScreen" id="pzH-t2-DkG"/>
                                 </connections>
                             </button>
-                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7o-Gf-YmL">
-                                <rect key="frame" x="123" y="413" width="168" height="70"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="FvS-WE-ESR">
-                                <rect key="frame" x="87" y="174" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="oiH-AQ-Uup" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3y8-BF-zD6"/>
                             <constraint firstItem="i7o-Gf-YmL" firstAttribute="centerX" secondItem="oiH-AQ-Uup" secondAttribute="centerX" id="76N-dQ-qXi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oiH-AQ-Uup" secondAttribute="bottom" constant="288" id="8vU-hC-AQn"/>
-                            <constraint firstItem="i7o-Gf-YmL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="So9-KW-DLJ"/>
-                            <constraint firstItem="oiH-AQ-Uup" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="eza-h7-Uac"/>
-                            <constraint firstItem="i7o-Gf-YmL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gmc-gl-Y1F"/>
-                            <constraint firstItem="i7o-Gf-YmL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="369" id="nFw-ge-wNf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oiH-AQ-Uup" secondAttribute="bottom" constant="79" id="8vU-hC-AQn"/>
+                            <constraint firstItem="i7o-Gf-YmL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="So9-KW-DLJ"/>
+                            <constraint firstItem="oiH-AQ-Uup" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="eza-h7-Uac"/>
+                            <constraint firstItem="i7o-Gf-YmL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-321.5" id="gmc-gl-Y1F"/>
+                            <constraint firstItem="i7o-Gf-YmL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="nFw-ge-wNf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginClicked" destination="oiH-AQ-Uup" id="KdG-Bu-YHk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -107,6 +110,31 @@
                                     <action selector="addGithubClicked:" destination="cdp-7k-WZS" eventType="touchUpInside" id="1cD-EF-ZaQ"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="3yh-2i-DIH">
+                                <rect key="frame" x="0.0" y="57" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Profil" id="0tZ-Sk-aPk"/>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="face" translatesAutoresizingMaskIntoConstraints="NO" id="8kc-sx-E9n">
+                                <rect key="frame" x="87" y="169" width="240" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="james@hotmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EI-mM-J0T">
+                                <rect key="frame" x="113" y="437" width="189" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="james" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGj-TW-2nC">
+                                <rect key="frame" x="113" y="536" width="189" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zJq-3H-eBM"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
@@ -408,6 +436,7 @@
     </scenes>
     <resources>
         <image name="archivebox.fill" catalog="system" width="128" height="106"/>
+        <image name="face" width="1024" height="1024"/>
         <image name="github" width="560" height="560"/>
         <image name="linkedin" width="512" height="512"/>
         <image name="logo" width="400" height="200"/>
