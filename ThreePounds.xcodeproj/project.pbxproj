@@ -19,11 +19,12 @@
 		B9AA9F1425F121B3009E7ABF /* SegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA9F1325F121B3009E7ABF /* SegeViewController.swift */; };
 		B9AA9F3125F15C70009E7ABF /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA9F3025F15C70009E7ABF /* PhotoViewController.swift */; };
 		B9AA9F3425F15E2C009E7ABF /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA9F3325F15E2C009E7ABF /* CustomCollectionViewCell.swift */; };
+		B9AA9F3F25F16B68009E7ABF /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA9F3E25F16B68009E7ABF /* ProfilViewController.swift */; };
+		B9AA9F4C25F1731A009E7ABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9AA9F4B25F1731A009E7ABF /* Assets.xcassets */; };
 		B9F00EA925F0266200D467EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F00EA825F0266200D467EC /* AppDelegate.swift */; };
 		B9F00EAB25F0266200D467EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F00EAA25F0266200D467EC /* SceneDelegate.swift */; };
 		B9F00EAD25F0266200D467EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F00EAC25F0266200D467EC /* ViewController.swift */; };
 		B9F00EB025F0266200D467EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9F00EAE25F0266200D467EC /* Main.storyboard */; };
-		B9F00EB225F0266400D467EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9F00EB125F0266400D467EC /* Assets.xcassets */; };
 		B9F00EB525F0266400D467EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9F00EB325F0266400D467EC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -42,12 +43,13 @@
 		B9AA9F1325F121B3009E7ABF /* SegeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegeViewController.swift; sourceTree = "<group>"; };
 		B9AA9F3025F15C70009E7ABF /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		B9AA9F3325F15E2C009E7ABF /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		B9AA9F3E25F16B68009E7ABF /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
+		B9AA9F4B25F1731A009E7ABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../Downloads/JsonPlaceHolder-master/MediaMonksExercise/Assets.xcassets"; sourceTree = "<group>"; };
 		B9F00EA525F0266200D467EC /* ThreePounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreePounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F00EA825F0266200D467EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9F00EAA25F0266200D467EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B9F00EAC25F0266200D467EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B9F00EAF25F0266200D467EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B9F00EB125F0266400D467EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9F00EB425F0266400D467EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9F00EB625F0266400D467EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 				B9AA9F1325F121B3009E7ABF /* SegeViewController.swift */,
 				B9AA9F1025F120C0009E7ABF /* CommentTableViewController.swift */,
 				B9AA9F3025F15C70009E7ABF /* PhotoViewController.swift */,
+				B9AA9F3E25F16B68009E7ABF /* ProfilViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 		B9F00EA725F0266200D467EC /* ThreePounds */ = {
 			isa = PBXGroup;
 			children = (
+				B9AA9F4B25F1731A009E7ABF /* Assets.xcassets */,
 				B9F00EBD25F029D700D467EC /* Views */,
 				B99AC17425F03C130051579F /* Utils */,
 				B99AC17025F03B470051579F /* Service */,
@@ -148,7 +152,6 @@
 				B9F00EA825F0266200D467EC /* AppDelegate.swift */,
 				B9F00EAA25F0266200D467EC /* SceneDelegate.swift */,
 				B9F00EAE25F0266200D467EC /* Main.storyboard */,
-				B9F00EB125F0266400D467EC /* Assets.xcassets */,
 				B9F00EB325F0266400D467EC /* LaunchScreen.storyboard */,
 				B9F00EB625F0266400D467EC /* Info.plist */,
 			);
@@ -224,7 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9F00EB525F0266400D467EC /* LaunchScreen.storyboard in Resources */,
-				B9F00EB225F0266400D467EC /* Assets.xcassets in Resources */,
+				B9AA9F4C25F1731A009E7ABF /* Assets.xcassets in Resources */,
 				B9F00EB025F0266200D467EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +287,7 @@
 				B99AC18025F0432A0051579F /* Photo.swift in Sources */,
 				B99AC17625F03C2E0051579F /* Constant.swift in Sources */,
 				B99AC16725F0303C0051579F /* Album.swift in Sources */,
+				B9AA9F3F25F16B68009E7ABF /* ProfilViewController.swift in Sources */,
 				B99AC16B25F031A30051579F /* AlbumsTableViewController.swift in Sources */,
 				B9AA9F3425F15E2C009E7ABF /* CustomCollectionViewCell.swift in Sources */,
 				B99AC1A425F05B440051579F /* Comment.swift in Sources */,

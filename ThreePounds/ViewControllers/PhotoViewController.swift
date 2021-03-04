@@ -6,8 +6,6 @@
 //
 
 import UIKit
-import Kingfisher
-
 
 class PhotoViewController: UIViewController, UICollectionViewDataSource {
     

@@ -64,18 +64,76 @@
         <!--Profil-->
         <scene sceneID="Hsv-ST-aSx">
             <objects>
-                <viewController id="cdp-7k-WZS" sceneMemberID="viewController">
+                <viewController id="cdp-7k-WZS" customClass="ProfilViewController" customModule="ThreePounds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PQV-ND-MP6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Github" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEV-56-rzj">
+                                <rect key="frame" x="131" y="713" width="51" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPL-r6-91c">
+                                <rect key="frame" x="234" y="749" width="43" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="OZe-iY-f9K"/>
+                                    <constraint firstAttribute="width" constant="43" id="yLM-0I-X6R"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="linkedin">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                </state>
+                                <connections>
+                                    <action selector="addLinkedinClicked:" destination="cdp-7k-WZS" eventType="touchUpInside" id="zAV-TO-RU2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Linkedin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3M-nu-web">
+                                <rect key="frame" x="226" y="715" width="58" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0t-T1-ogs">
+                                <rect key="frame" x="135" y="749" width="43" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="ToS-LO-3CX"/>
+                                    <constraint firstAttribute="height" constant="48" id="kcP-D4-WiR"/>
+                                </constraints>
+                                <state key="normal" image="github">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addGithubClicked:" destination="cdp-7k-WZS" eventType="touchUpInside" id="1cD-EF-ZaQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zJq-3H-eBM"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstItem="UPL-r6-91c" firstAttribute="top" secondItem="g3M-nu-web" secondAttribute="bottom" constant="16" id="0h8-4S-nbZ"/>
+                            <constraint firstItem="g3M-nu-web" firstAttribute="firstBaseline" secondItem="ZEV-56-rzj" secondAttribute="baseline" constant="1" id="953-N8-5XL"/>
+                            <constraint firstItem="g3M-nu-web" firstAttribute="baseline" secondItem="ZEV-56-rzj" secondAttribute="baseline" constant="1" id="Q7R-Dc-g6S"/>
+                            <constraint firstItem="q0t-T1-ogs" firstAttribute="leading" secondItem="zJq-3H-eBM" secondAttribute="leading" constant="135" id="XrA-Rr-bp3"/>
+                            <constraint firstItem="g3M-nu-web" firstAttribute="centerY" secondItem="ZEV-56-rzj" secondAttribute="centerY" constant="1" id="cio-Rk-TnD"/>
+                            <constraint firstItem="q0t-T1-ogs" firstAttribute="top" secondItem="zJq-3H-eBM" secondAttribute="top" constant="705" id="f2g-sY-lDs"/>
+                            <constraint firstItem="zJq-3H-eBM" firstAttribute="bottom" secondItem="q0t-T1-ogs" secondAttribute="bottom" constant="16" id="f5t-AW-9xO"/>
+                            <constraint firstItem="ZEV-56-rzj" firstAttribute="top" secondItem="zJq-3H-eBM" secondAttribute="top" constant="669" id="fuL-Qa-FDA"/>
+                            <constraint firstItem="q0t-T1-ogs" firstAttribute="centerX" secondItem="PQV-ND-MP6" secondAttribute="centerX" constant="-50.5" id="hvm-CS-ctk"/>
+                            <constraint firstItem="ZEV-56-rzj" firstAttribute="centerX" secondItem="q0t-T1-ogs" secondAttribute="centerX" id="mGT-G7-m4F"/>
+                            <constraint firstItem="g3M-nu-web" firstAttribute="leading" secondItem="ZEV-56-rzj" secondAttribute="trailing" constant="44" id="u3f-qF-M7K"/>
+                            <constraint firstItem="g3M-nu-web" firstAttribute="centerX" secondItem="UPL-r6-91c" secondAttribute="centerX" constant="-0.5" id="wg7-1x-ZAg"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profil" image="person.fill" catalog="system" id="MhB-5m-ChH"/>
+                    <connections>
+                        <outlet property="githubButton" destination="q0t-T1-ogs" id="LwT-IA-WOX"/>
+                        <outlet property="linkedinButton" destination="UPL-r6-91c" id="3t3-aM-C8I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPs-md-jdU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2000" y="421"/>
+            <point key="canvasLocation" x="2000.0000000000002" y="420.53571428571428"/>
         </scene>
         <!--Album-->
         <scene sceneID="FVP-lt-M8s">
@@ -200,12 +258,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="v54-gu-5NH"/>
+                    <connections>
+                        <outlet property="commentLabel" destination="ECY-jZ-GTX" id="PwI-kt-N8B"/>
+                        <outlet property="photoLabel" destination="4RH-yR-WN2" id="Jsm-pL-Avt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tfT-CS-kWd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3866.666666666667" y="-252.45535714285714"/>
         </scene>
-        <!--Comment Table View Controller-->
+        <!--Comment-->
         <scene sceneID="Ba2-6J-RDy">
             <objects>
                 <tableViewController id="iNv-m1-fYZ" customClass="CommentTableViewController" customModule="ThreePounds" customModuleProvider="target" sceneMemberID="viewController">
@@ -228,13 +290,13 @@
                             <outlet property="delegate" destination="iNv-m1-fYZ" id="fHP-O3-UyK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="duJ-X4-MnA"/>
+                    <navigationItem key="navigationItem" title="Comment" id="duJ-X4-MnA"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUS-v4-uOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4931.884057971015" y="108.48214285714285"/>
         </scene>
-        <!--Photo View Controller-->
+        <!--Photo-->
         <scene sceneID="Afe-jU-NmO">
             <objects>
                 <viewController id="Zzv-P8-UTP" customClass="PhotoViewController" customModule="ThreePounds" customModuleProvider="target" sceneMemberID="viewController">
@@ -292,7 +354,7 @@
                             <constraint firstItem="031-IH-vXm" firstAttribute="top" secondItem="msg-1G-MZQ" secondAttribute="top" id="wrY-JC-NCi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3CO-c3-xxa"/>
+                    <navigationItem key="navigationItem" title="Photo" id="3CO-c3-xxa"/>
                     <connections>
                         <outlet property="collectionView" destination="031-IH-vXm" id="0Hv-fK-MwC"/>
                     </connections>
@@ -331,6 +393,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xYf-s6-kvx">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -344,6 +408,8 @@
     </scenes>
     <resources>
         <image name="archivebox.fill" catalog="system" width="128" height="106"/>
+        <image name="github" width="560" height="560"/>
+        <image name="linkedin" width="512" height="512"/>
         <image name="logo" width="400" height="200"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="photo.fill" catalog="system" width="128" height="93"/>

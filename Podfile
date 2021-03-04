@@ -9,6 +9,6 @@ target 'ThreePounds' do
 
 pod 'Alamofire', '~> 5.2'
 pod 'Kingfisher', '~> 6.0'
-pod 'MKProgress'
+pod 'SwiftIcons', '~> 3.0'
 
 end
