@@ -56,32 +56,6 @@ class Api {
             }
         }
     }
-    
-    func getPhotoList(albumId: Int ,page: Int, _ completionHandler: @escaping ([Photo]?) -> Void){
-        
-        let parameters = ["_limit": 15,
-                          "_page": page]
-        
-        let req = get("/albums/\(albumId)/photos",parameters: parameters)
-        
-        req.responseJSON { response in
-            
-            guard let json = response.data else {
-                completionHandler(nil)
-                return
-            }
-            do{
-                let decoder = JSONDecoder()
-                let photos = try decoder.decode([Photo].self, from: json)
-                completionHandler(photos)
-            }catch let err{
-                print(err)
-            }
-        }
-        
-        
-    }
-    
 
 }
     

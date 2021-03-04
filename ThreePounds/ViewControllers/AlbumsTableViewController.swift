@@ -12,6 +12,9 @@ class AlbumsTableViewController: UITableViewController {
     var albumData = [Album]()
     var page = 0
     
+    var loadingData = false
+    var allDataLoaded = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getAlbums(page)
@@ -51,11 +54,15 @@ class AlbumsTableViewController: UITableViewController {
         
         return cell
     }
+    
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "toDetailsVC", sender: nil)
+       
     }
+
 }

@@ -8,5 +8,7 @@ target 'ThreePounds' do
   # Pods for ThreePounds
 
 pod 'Alamofire', '~> 5.2'
+pod 'Kingfisher', '~> 6.0'
+pod 'MKProgress'
 
 end
