@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loginClicked.setIcon(icon: .emoji(.balloon), title: "Welcome", color: .black, forState: .normal)
+        
     }
 
 
