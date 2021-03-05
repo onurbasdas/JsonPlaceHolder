@@ -29,6 +29,4 @@ I included it in my project using the jsonplaceholder api.
 ## Author
 Onur Basdas, onurebasdase@hotmail.com
 
-## License
-IMDB-Clone is available under the MIT License, see LICENSE for more information.
 
